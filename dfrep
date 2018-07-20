@@ -1,0 +1,65 @@
+#!/bin/sh
+os=`uname`
+gitUserName="fifman"
+defaultPackName="dotfile";
+defaultPackFolder="$HOME/.stow_repo";
+
+installRepo(){
+    packFolder="$defaultPackFolder";
+    if which stow > /dev/null; then
+        echo "stow already installed!"
+    else
+        if [[ os =~ ".*Darwin.*" ]] then
+            brew install stow;
+        elif [[ os =~ ".*Linux.*" ]] then
+            yum install -y epel-release;
+            yum install -y stow;
+        fi
+    fi
+
+    if [ -d "$packFolder" ]; then
+        echo "$packFolder already created!"
+    else
+        mkdir -p "$packFolder";
+    fi
+    packRepo "$1";
+}
+
+packRepo(){
+    packFolder="$defaultPackFolder";
+    packName=$(expr "$1" '|' "$defaultPackName");
+    if [ -d "$packFolder/$packName/.git" ]; then
+        echo "Repo $packName already cloned from github!";
+    else
+        git clone "https://github.com/$gitUserName/$packName.git" "$packFolder/$packName";
+    fi
+}
+
+saveRepo(){
+    packFolder="$defaultPackFolder";
+    packName=$(expr "$1" '|' "$defaultPackName");
+    cd "$packFolder/$packName" || exit;
+    if [ "$(git status -s)" = "" ]; then
+        echo "No modification in pack $packName, does not need to save it!"
+    else
+        git add --all;
+        git commit;
+        git push origin master;
+    fi
+}
+
+loadRepo(){
+    packFolder="$defaultPackFolder";
+    packName=$(expr "$1" '|' "$defaultPackName");
+    cd "$packFolder/$packName" || exit;
+    git pull;
+    stow -d "$packFolder" -t ~ "$packName";
+}
+
+if [ "$1" = "install" ]; then
+    installRepo "$2";
+elif [ "$1" = "save" ]; then
+    saveRepo "$2";
+elif [ "$1" = "load" ]; then
+    loadRepo "$2";
+fi 
