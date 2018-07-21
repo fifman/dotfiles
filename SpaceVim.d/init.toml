@@ -29,6 +29,7 @@
     guifont = "Hack Nerd Font:h11"
     enable_neomake = false
     enable_ycm = 1
+    enableWcwidth = 1
     
 
 # Enable autocomplete layer
@@ -50,3 +51,9 @@ name = "VersionControl"
 
 [[layers]]
 name = "lang#markdown"
+
+[[layers]]
+name = "unite"
+
+[[layers]]
+name = "vim"
