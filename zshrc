@@ -3,7 +3,7 @@ export LANG=en_US.UTF-8
 
 after_hooks=()
 
-after_event () {
+post_process () {
     for hook in {$after_hooks[@]}; do
         eval "$hook"
     done
@@ -21,4 +21,4 @@ export HOMEBREW_GITHUB_API_TOKEN="ac102e2db25ec733b06210ca2a4bcfabc17cc484"
 alias display='echo -e "\033]50;SetProfile=Display\a"'
 alias nodisplay='echo -e "\033]50;SetProfile=Default\a"'
 
-after_event
+post_process
