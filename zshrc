@@ -3,7 +3,7 @@ export LANG=en_US.UTF-8
 
 export ZSH=/Users/fifman/.oh-my-zsh
 ZSH_THEME="avit"
-plugins=(git vi-mode sudo docker osx docker-compose docker-machine brew mvn gradle)
+plugins=(git vi-mode sudo docker osx docker-compose docker-machine brew mvn gradle goint pyint)
 source $ZSH/oh-my-zsh.sh
 
 powerline_path=~/Library/Python/2.7
@@ -21,20 +21,9 @@ export SVN_EDITOR=vim
 export USER_MEM_ARGS="-Xmx1024m -XX:MaxPermSize=256m"       
 export MW_HOME=/opt/wls1036_dev/
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
 [ -f /Users/fifman/.travis/travis.sh ] && source /Users/fifman/.travis/travis.sh
 
 export HOMEBREW_GITHUB_API_TOKEN="ac102e2db25ec733b06210ca2a4bcfabc17cc484"
-
-export GOPATH=/Users/fifman/workspace/go
-export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
-test -d "$GOPATH" || mkdir "$GOPATH"
-export GOBIN=/Users/fifman/workspace/go/bin
 
 alias display='echo -e "\033]50;SetProfile=Display\a"'
 alias nodisplay='echo -e "\033]50;SetProfile=Default\a"'
