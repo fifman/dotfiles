@@ -47,3 +47,6 @@ name = "git"
 
 [[layers]]
 name = "VersionControl"
+
+[[layers]]
+name = "lang#markdown"
