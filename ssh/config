@@ -1,0 +1,55 @@
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/mac.key
+
+Host ubuntu
+    HostName 192.168.1.105
+    IdentityFile ~/.ssh/mac.key
+
+Host fremont
+    HostName 23.83.242.64
+    Port 28465
+    User root
+    IdentityFile ~/.ssh/mac.key
+
+Host losangle
+    HostName 45.78.12.43
+    Port 28429
+    User root
+    IdentityFile ~/.ssh/mac.key
+
+Host git
+    HostName 192.168.1.105
+    User git
+    IdentityFile ~/.ssh/mac.key
+
+Host szpl
+    HostName 168.168.100.12
+    User admin
+    IdentityFile ~/.ssh/szpl.out12.key
+
+Host szplr
+    HostName 168.168.100.12
+    User root
+    IdentityFile ~/.ssh/szpl.out12.key
+
+Host szpl2
+    HostName 192.168.102.25
+    User root
+    IdentityFile ~/.ssh/szpl.in25.key
+
+Host virtual
+    HostName 192.168.99.100
+    User root
+    IdentityFile ~/.ssh/virtual-linux.key
+
+Host prod24
+    HostName 168.168.100.24
+    User root
+    IdentityFile ~/.ssh/mac.key
+
+Host prod25
+    HostName 168.168.100.25
+    User root
+    IdentityFile ~/.ssh/mac.key

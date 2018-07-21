@@ -1,0 +1,20 @@
+[user]
+	name = Yicheng Feng
+	email = 1264380449@qq.com
+[http "http://github.com"]
+[https "https://github.com"]
+[https "https://docker.com"]
+[http "http://docker.com"]
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	excludesFile = /Users/fifman/.config/git/ignore
+[http]
+[https]
+[http]
+	proxy = socks5://127.0.0.1:1080
+[https]
+	proxy = socks5://127.0.0.1:1080

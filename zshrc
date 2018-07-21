@@ -1,7 +1,6 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# module_path=($module_path /usr/local/lib/zpython)
 export ZSH=/Users/fifman/.oh-my-zsh
 ZSH_THEME="avit"
 plugins=(git vi-mode sudo docker osx docker-compose docker-machine brew mvn gradle)
