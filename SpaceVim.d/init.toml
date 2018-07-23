@@ -8,29 +8,29 @@
 
 # All SpaceVim option below [option] section
 [options]
-    # set spacevim theme. by default colorscheme layer is not loaded,
-    # if you want to use more colorscheme, please load the colorscheme
-    # layer
-    colorscheme = "gruvbox"
-    background = "dark"
-    # Disable guicolors in basic mode, many terminal do not support 24bit
-    # true colors
-    enable_guicolors = true
-    # Disable statusline separator, if you want to use other value, please
-    # install nerd fonts
-    statusline_separator = "arrow"
-    statusline_inactive_separator = "arrow"
-    buffer_index_type = 4
-    enable_tabline_filetype_icon = true
-    enable_statusline_display_mode = false
-    default_indent = 4
-    bootstrap_after = "myconfig#after"
-    bootstrap_before = "myconfig#before"
-    guifont = "Hack Nerd Font:h11"
-    enable_neomake = false
-    enable_ycm = 1
-    enableWcwidth = 1
-    
+# set spacevim theme. by default colorscheme layer is not loaded,
+# if you want to use more colorscheme, please load the colorscheme
+# layer
+colorscheme = "gruvbox"
+background = "dark"
+# Disable guicolors in basic mode, many terminal do not support 24bit
+# true colors
+enable_guicolors = true
+# Disable statusline separator, if you want to use other value, please
+# install nerd fonts
+statusline_separator = "arrow"
+statusline_inactive_separator = "arrow"
+buffer_index_type = 4
+enable_tabline_filetype_icon = true
+enable_statusline_display_mode = false
+default_indent = 4
+bootstrap_after = "myconfig#after"
+bootstrap_before = "myconfig#before"
+guifont = "Hack Nerd Font:h11"
+enable_neomake = false
+enable_ycm = 1
+enableWcwidth = 1
+
 
 # Enable autocomplete layer
 [[layers]]
@@ -53,7 +53,43 @@ name = "VersionControl"
 name = "lang#markdown"
 
 [[layers]]
-name = "unite"
+name = "denite"
 
 [[layers]]
-name = "vim"
+name = "lang#vim"
+
+[[custom_plugins]]
+name = "cespare/vim-toml"
+merged = 0
+
+[[custom_plugins]]
+name = "junegunn/goyo.vim"
+merged = 0
+
+[[custom_plugins]]
+name = "junegunn/limelight.vim"
+merged = 0
+
+[[custom_plugins]]
+name = "junegunn/vim-easy-align"
+merged = 0
+
+[[custom_plugins]]
+name = "terryma/vim-multiple-cursors"
+merged = 0
+
+[[custom_plugins]]
+name = "tpope/vim-abolish"
+merged = 0
+
+[[custom_plugins]]
+name = "dhruvasagar/vim-table-mode"
+merged = 0
+
+[[custom_plugins]]
+name = "godlygeek/tabular"
+merged = 0
+
+[[custom_plugins]]
+name = "mbbill/undotree"
+merged = 0
