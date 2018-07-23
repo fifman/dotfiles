@@ -1,28 +1,28 @@
 Host *
     AddKeysToAgent yes
-    IdentityFile ~/.ssh/prod25.key
+    IdentityFile ~/.ssh/prod24.key
     
 Host szpl
     HostName 168.168.100.12
     User admin
-    IdentityFile ~/.ssh/prod25.key
+    IdentityFile ~/.ssh/prod24.key
 
 Host szplr
     HostName 168.168.100.12
     User root
-    IdentityFile ~/.ssh/prod25.key
+    IdentityFile ~/.ssh/prod24.key
 
 Host szpl2
     HostName 192.168.102.25
     User root
-    IdentityFile ~/.ssh/prod25.key
+    IdentityFile ~/.ssh/prod24.key
 
 Host prod24
     HostName 168.168.100.24
     User root
-    IdentityFile ~/.ssh/prod25.key
+    IdentityFile ~/.ssh/prod24.key
 
-Host prod25
+Host prod24
     HostName 168.168.100.25
     User root
-    IdentityFile ~/.ssh/prod25.key
+    IdentityFile ~/.ssh/prod24.key
