@@ -1,3 +1,7 @@
+Host *
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/prod25.key
+    
 Host szpl
     HostName 168.168.100.12
     User admin
