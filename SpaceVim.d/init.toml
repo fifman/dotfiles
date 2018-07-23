@@ -28,7 +28,7 @@ bootstrap_after = "myconfig#after"
 bootstrap_before = "myconfig#before"
 guifont = "Hack Nerd Font:h11"
 enable_neomake = false
-enable_ycm = 1
+enable_ycm = 0
 enableWcwidth = 1
 
 

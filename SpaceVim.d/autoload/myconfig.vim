@@ -18,8 +18,7 @@ func! myconfig#before() abort
         \ '~/.SpaceVim.d/init.toml',
         \ '~/.SpaceVim/config/main.vim',
         \ '~/.SpaceVim/ginit.vim',
-        \ '~/.dotfiles',
-        \ '~/Data/Develop'
+        \ '~/.dotfiles'
     \ ]
 
     "====================================== Unite
