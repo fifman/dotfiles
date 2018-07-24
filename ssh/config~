@@ -7,7 +7,7 @@ Host prod24
     User root
     IdentityFile ~/.ssh/test12.key
 
-Host prod25
+Host test12
     HostName 168.168.100.25
     User root
     IdentityFile ~/.ssh/test12.key
