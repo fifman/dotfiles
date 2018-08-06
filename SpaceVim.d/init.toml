@@ -93,3 +93,7 @@ merged = 0
 [[custom_plugins]]
 name = "mbbill/undotree"
 merged = 0
+
+[[custom_plugins]]
+name = "dbeniamine/cheat.sh-vim"
+merged = 0
