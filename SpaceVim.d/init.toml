@@ -31,7 +31,6 @@ enable_neomake = false
 enable_ycm = 0
 enableWcwidth = 1
 
-
 # Enable autocomplete layer
 [[layers]]
 name = 'autocomplete'
@@ -92,4 +91,12 @@ merged = 0
 
 [[custom_plugins]]
 name = "mbbill/undotree"
+merged = 0
+
+[[custom_plugins]]
+name = "posva/vim-vue"
+merged = 0
+
+[[custom_plugins]]
+name = "dbeniamine/cheat.sh-vim"
 merged = 0

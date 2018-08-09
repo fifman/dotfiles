@@ -1,0 +1,5 @@
+[user]
+	name = Yicheng Feng
+	email = fengyc@isc.szpl.gov
+[core]
+	excludesFile = /Users/fifman/.config/git/ignore

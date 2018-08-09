@@ -4,7 +4,7 @@ export LANG=en_US.UTF-8
 plugins=(git vi-mode sudo docker docker-compose docker-machine)
 
 export ZSH="/root/.oh-my-zsh"
-ZSH_THEME="Aphrodite"
+ZSH_THEME="aphrodite"
 source $ZSH/oh-my-zsh.sh
 
 
