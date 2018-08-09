@@ -11,7 +11,7 @@
 # set spacevim theme. by default colorscheme layer is not loaded,
 # if you want to use more colorscheme, please load the colorscheme
 # layer
-colorscheme = "gruvbox"
+colorscheme = "PaperColor"
 background = "dark"
 # Disable guicolors in basic mode, many terminal do not support 24bit
 # true colors
@@ -32,6 +32,9 @@ enable_ycm = 1
 enableWcwidth = 1
 
 
+[[layers]]
+name = "colorscheme"
+
 # Enable autocomplete layer
 [[layers]]
 name = 'autocomplete'
@@ -42,6 +45,17 @@ auto-completion-tab-key-behavior = "smart"
 name = 'shell'
 default_position = 'top'
 default_height = 30
+
+[[layers]]
+name = "lang#javascript"
+auto_fix = true
+enable_flow_syntax = true
+
+[[layers]]
+name = "lang#go"
+
+[[layers]]
+name = "lang#html"
 
 [[layers]]
 name = "git"
@@ -100,4 +114,16 @@ merged = 0
 
 [[custom_plugins]]
 name = "dbeniamine/cheat.sh-vim"
+merged = 0
+
+[[custom_plugins]]
+name = "w0ng/vim-hybrid"
+merged = 0
+
+[[custom_plugins]]
+name = "NLKNguyen/papercolor-theme"
+merged = 0
+
+[[custom_plugins]]
+name = "junegunn/seoul256.vim"
 merged = 0

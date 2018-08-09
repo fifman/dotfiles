@@ -23,3 +23,5 @@ alias display='echo -e "\033]50;SetProfile=Display\a"'
 alias nodisplay='echo -e "\033]50;SetProfile=Default\a"'
 
 post_process
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
