@@ -11,10 +11,18 @@
 	process = git-lfs filter-process
 	required = true
 [core]
-	excludesFile = /Users/fifman/.config/git/ignore
+	excludesfile = /Users/fifman/.config/git/ignore
 [http]
 [https]
 [http]
 	proxy = http://127.0.0.1:8001
 [https]
 	proxy = http://127.0.0.1:8001
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/fifman/.stCommitMsg
