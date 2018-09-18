@@ -11,7 +11,7 @@
 # set spacevim theme. by default colorscheme layer is not loaded,
 # if you want to use more colorscheme, please load the colorscheme
 # layer
-colorscheme = "PaperColor"
+colorscheme = "gruvbox"
 background = "dark"
 # Disable guicolors in basic mode, many terminal do not support 24bit
 # true colors
@@ -30,6 +30,7 @@ guifont = "Hack Nerd Font:h11"
 enable_neomake = false
 enable_ycm = 1
 enableWcwidth = 1
+windows_smartclose = ""
 
 
 [[layers]]
@@ -122,6 +123,10 @@ merged = 0
 
 [[custom_plugins]]
 name = "NLKNguyen/papercolor-theme"
+merged = 0
+
+[[custom_plugins]]
+name = "terryma/vim-multiple-cursors"
 merged = 0
 
 [[custom_plugins]]

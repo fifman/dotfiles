@@ -15,9 +15,7 @@
 [http]
 [https]
 [http]
-	proxy = http://127.0.0.1:8001
 [https]
-	proxy = http://127.0.0.1:8001
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -26,3 +24,7 @@
 	trustExitCode = true
 [commit]
 	template = /Users/fifman/.stCommitMsg
+[http]
+	proxy = socks5://127.0.0.1:1080
+[https]
+	proxy = socks5://127.0.0.1:1080

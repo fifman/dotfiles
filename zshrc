@@ -17,7 +17,7 @@ source $ZSH/oh-my-zsh.sh
 
 [ -f /Users/fifman/.travis/travis.sh ] && source /Users/fifman/.travis/travis.sh
 
-export HOMEBREW_GITHUB_API_TOKEN="28baa51c13dd0ac0c2564949ef7bf041ee1e4a99"
+export HOMEBREW_GITHUB_API_TOKEN="baeb73fd55d88499299ad7c5a10531bba94f55ee"
 
 alias display='echo -e "\033]50;SetProfile=Display\a"'
 alias nodisplay='echo -e "\033]50;SetProfile=Default\a"'
