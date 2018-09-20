@@ -53,3 +53,29 @@ Host prod25
     HostName 168.168.100.25
     User root
     IdentityFile ~/.ssh/mac.key
+
+Host linode
+    HostName 103.29.71.116
+    User root
+
+Host node1
+    HostName 168.168.100.28
+    User root
+
+Host node2
+    HostName 168.168.100.29
+    User root
+
+Host node3
+    HostName 168.168.100.30
+    User root
+
+# --- Sourcetree Generated ---
+Host fifman-GitHub
+	HostName github.com
+	User fifman
+	PreferredAuthentications publickey
+	IdentityFile /Users/fifman/.ssh/fifman-GitHub
+	UseKeychain yes
+	AddKeysToAgent yes
+# ----------------------------
