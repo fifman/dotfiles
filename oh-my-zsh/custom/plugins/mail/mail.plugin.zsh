@@ -37,6 +37,12 @@ function szplmail () {
             -a)
                 shift
                 opts=$opts" -a "$(parseArgs "$@");;
+            -u)
+                shift
+                opts=$opts" -u "$(parseArgs "$@") ;;
+            -m)
+                shift
+                opts=$opts" -m "$(parseArgs "$@") ;;
             -*)
                 echo "wrong options!"
                 exit 2;;
@@ -45,5 +51,5 @@ function szplmail () {
         esac
     done
 
-    sendemail -f fengyc@isc.szpl.gov -u test -m test -s mail.isc.szpl.gov -xu fengyc@isc.szpl.gov  -xp 110316Fyc -o tls=no $opts
+    sendemail -f fengyc@isc.szpl.gov -s mail.isc.szpl.gov -xu fengyc@isc.szpl.gov  -xp 110316Fyc $=opts -o tls=no
 }
