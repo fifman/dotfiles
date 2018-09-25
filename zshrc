@@ -17,7 +17,7 @@ source $ZSH/oh-my-zsh.sh
 
 [ -f /Users/fifman/.travis/travis.sh ] && source /Users/fifman/.travis/travis.sh
 
-export HOMEBREW_GITHUB_API_TOKEN="baeb73fd55d88499299ad7c5a10531bba94f55ee"
+export HOMEBREW_GITHUB_API_TOKEN="7b6719891349c41a1452e59e307dd8c9e6694ecc"
 
 alias display='echo -e "\033]50;SetProfile=Display\a"'
 alias nodisplay='echo -e "\033]50;SetProfile=Default\a"'
@@ -25,3 +25,4 @@ alias nodisplay='echo -e "\033]50;SetProfile=Default\a"'
 post_process
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+alias resy="ps axu | grep 'synergy-service' | grep MacOS | awk '{print }' | xargs kill -9"

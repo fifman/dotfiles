@@ -3,3 +3,4 @@ export GOROOT="$(brew --prefix golang)/libexec"
 export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 test -d "$GOPATH" || mkdir "$GOPATH"
 export GOBIN=/Users/fifman/workspace/go/bin
+alias goget="HTTP_PROXY=socks5://127.0.0.1:1080 HTTPS_PROXY=socks5://127.0.0.1:1080 go get"

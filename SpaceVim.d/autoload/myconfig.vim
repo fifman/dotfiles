@@ -54,6 +54,8 @@ func! myconfig#before() abort
     "====================================== Multiple-Cursors
     :au User MultipleCursorsPre DelimitMateOff
     :au User MultipleCursorsPost DelimitMateOn
+    let g:multi_cursor_exit_from_visual_mode = 0
+    let g:multi_cursor_exit_from_insert_mode = 0
 
     "====================================== Undotree
     nnoremap <F5> :<C-u>UndotreeToggle<CR>
