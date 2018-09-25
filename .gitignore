@@ -20,5 +20,6 @@ tags
 # Persistent undo
 [._]*.un~
 
+oh-my-zsh/custom/plugins/private
 
 # End of https://www.gitignore.io/api/vim
