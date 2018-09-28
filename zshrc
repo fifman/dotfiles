@@ -23,4 +23,3 @@ alias nodisplay='echo -e "\033]50;SetProfile=Default\a"'
 post_process
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-alias resy="ps axu | grep 'synergy-service' | grep MacOS | awk '{print }' | xargs kill -9"
