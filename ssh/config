@@ -19,6 +19,12 @@ Host losangle
     User root
     IdentityFile ~/.ssh/mac.key
 
+Host los2
+    HostName 23.106.133.91
+    Port 27175
+    User root
+    IdentityFile ~/.ssh/mac.key
+
 Host git
     HostName 192.168.1.105
     User git
