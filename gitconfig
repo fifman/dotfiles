@@ -29,6 +29,6 @@
 [https]
 [http]
 [http]
-	proxy = socks5://127.0.0.1:1080
+	proxy = socks5://127.0.0.1:1180
 [https]
-	proxy = socks5://127.0.0.1:1080
+	proxy = socks5://127.0.0.1:1180

@@ -2,7 +2,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 plugins=(git vi-mode sudo docker osx docker-compose docker-machine brew mvn gradle 
-    goint pyint javaint weblogic svnint powerline gitint mail private)
+    goint pyint javaint weblogic svnint powerline gitint mail private mobile)
 
 after_hooks=()
 post_process () {
