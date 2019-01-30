@@ -24,7 +24,7 @@ endf
 func! myconfig#before() abort
 
     au BufNewFile,BufRead *.gradle set filetype=groovy
-	au BufRead,BufNewFile *.ans	set filetype=yaml
+	" au BufRead,BufNewFile *.ans	set filetype=yaml
 	au BufRead,BufNewFile *.stack set filetype=yaml
 
     let g:mapleader = ";"
@@ -61,4 +61,7 @@ func! myconfig#before() abort
 
     "====================================== Undotree
     nnoremap <F5> :<C-u>UndotreeToggle<CR>
+
+    "====================================== VimFiler
+    nnoremap <F4> :<C-u>VimFilerBufferDir<CR>
 endf

@@ -31,10 +31,17 @@ enable_neomake = false
 enable_ycm = 1
 enableWcwidth = 1
 windows_smartclose = ""
+enable_vimfiler_gitstatus = true
 
 
 [[layers]]
+name = "tmux"
+
+[[layers]]
 name = "colorscheme"
+
+[[layers]]
+name = "lang#ansible"
 
 # Enable autocomplete layer
 [[layers]]
@@ -72,6 +79,9 @@ name = "denite"
 
 [[layers]]
 name = "lang#vim"
+
+[[layers]]
+name = "fzf"
 
 [[custom_plugins]]
 name = "cespare/vim-toml"

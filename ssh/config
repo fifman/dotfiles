@@ -60,6 +60,16 @@ Host prod25
     User root
     IdentityFile ~/.ssh/mac.key
 
+Host brewvultr
+    HostName 45.76.133.180
+    User brew
+    IdentityFile ~/.ssh/virtual-linux.key
+
+Host vultr
+    HostName 45.76.133.180
+    User root
+    IdentityFile ~/.ssh/virtual-linux.key
+
 Host linode
     HostName 103.29.71.116
     User root

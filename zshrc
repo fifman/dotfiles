@@ -23,3 +23,6 @@ alias nodisplay='echo -e "\033]50;SetProfile=Default\a"'
 post_process
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export LDFLAGS="-L/usr/local/opt/zlib/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include"
