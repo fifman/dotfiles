@@ -26,6 +26,7 @@ func! myconfig#before() abort
     au BufNewFile,BufRead *.gradle set filetype=groovy
 	" au BufRead,BufNewFile *.ans	set filetype=yaml
 	au BufRead,BufNewFile *.stack set filetype=yaml
+	au BufRead,BufNewFile *.tmux set filetype=tmux
 
     let g:mapleader = ";"
 
