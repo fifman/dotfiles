@@ -9,6 +9,7 @@ set-option -g default-terminal screen-256color
 bind-key : command-prompt
 bind-key r refresh-client
 bind-key L clear-history
+bind-key X kill-session
 
 bind-key space next-window
 bind-key bspace previous-window
@@ -30,7 +31,7 @@ set-window-option -g other-pane-height 25
 set-window-option -g other-pane-width 80
 
 bind-key a last-pane
-bind-key q display-panes
+bind-key q kill-server
 bind-key c new-window
 bind-key t next-window
 bind-key T previous-window
