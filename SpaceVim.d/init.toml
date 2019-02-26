@@ -140,3 +140,7 @@ merged = 0
 [[custom_plugins]]
 name = "junegunn/seoul256.vim"
 merged = 0
+
+[[custom_plugins]]
+name = "PProvost/vim-ps1"
+merged = 0

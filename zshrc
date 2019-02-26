@@ -28,3 +28,6 @@ export CPPFLAGS="-I/usr/local/opt/zlib/include"
 export EDITOR="/usr/local/bin/vim"
 
 post_process
+
+# ansible fork problem
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES

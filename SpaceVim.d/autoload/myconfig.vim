@@ -65,4 +65,7 @@ func! myconfig#before() abort
 
     "====================================== VimFiler
     nnoremap <F4> :<C-u>VimFilerBufferDir<CR>
+
+    "====================================== Youcompleteme
+    let g:ycm_filepath_completion_use_working_dir = 1
 endf
