@@ -1,2 +1,6 @@
-registry=http://registry.npm.taobao.org/
-disturl=http://npm.taobao.org/mirrors/node
+strict-ssl=false
+//nexus.msplat.io/repository/:_authToken=NpmToken.5927320b-1c89-3e93-8723-11553c2dd6b1
+registry=http://nexus.msplat.io/repository/npm
+_auth=admin
+always-auth=true
+home=https://www.npmjs.org

@@ -86,6 +86,10 @@ Host node3
     HostName 192.168.3.87
     User root
 
+Host worker1
+    HostName 192.168.3.88
+    User root
+
 # --- Sourcetree Generated ---
 Host fifman-GitHub
 	HostName github.com

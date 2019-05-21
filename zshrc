@@ -1,3 +1,11 @@
+# zmodload zsh/datetime
+# setopt PROMPT_SUBST
+# PS4='+$EPOCHREALTIME %N:%i> '
+# logfile=$(mktemp zsh_profile.XXXXXXXX)
+# echo "Logging to $logfile"
+# exec 3>&2 2>$logfile
+# setopt XTRACE
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
@@ -31,3 +39,6 @@ post_process
 
 # ansible fork problem
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+# unsetopt XTRACE
+# exec 2>&3 3>&-
