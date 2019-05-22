@@ -1,4 +1,5 @@
 func! myconfig#after() abort
+    set paste
     set wrap
     let g:vimsyn_folding = 'aftlpPr' 
     set foldmethod=syntax
