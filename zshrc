@@ -11,8 +11,7 @@ export LANG=en_US.UTF-8
 
 after_hooks=()
 
-plugins=(git vi-mode sudo docker osx docker-compose docker-machine brew mvn gradle 
-    goint pyint javaint weblogic svnint powerline gitint mail private mobile tmux)
+plugins=(git vi-mode sudo docker osx docker-compose docker-machine brew mvn gradle  goint pyint javaint weblogic svnint powerline gitint mail private mobile tmux ruby)
 
 post_process () {
     for hook in {$after_hooks[@]}; do
@@ -31,8 +30,8 @@ alias nodisplay='echo -e "\033]50;SetProfile=Default\a"'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export LDFLAGS="-L/usr/local/opt/zlib/lib"
-export CPPFLAGS="-I/usr/local/opt/zlib/include"
+# export LDFLAGS="-L/usr/local/opt/zlib/lib"
+# export CPPFLAGS="-I/usr/local/opt/zlib/include"
 export EDITOR="/usr/local/bin/vim"
 
 post_process
