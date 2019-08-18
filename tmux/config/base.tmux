@@ -67,9 +67,6 @@ if-shell "[ \"$COLORFGBG\" = \"11;15\" ]" "set-option -g pane-border-fg white"
 setw -g monitor-activity on
 set -g visual-activity on
 
-# Enable native Mac OS X copy/paste
-set-option -g default-command "/bin/bash -c 'which reattach-to-user-namespace >/dev/null && exec reattach-to-user-namespace $SHELL -l || exec $SHELL -l'"
-
 # Allow the arrow key to be used immediately after changing windows
 set-option -g repeat-time 0
 
