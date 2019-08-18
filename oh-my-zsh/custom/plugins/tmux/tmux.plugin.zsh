@@ -1,4 +1,4 @@
-source `find $(brew --prefix)/opt/tmuxinator/libexec -name completion`/tmuxinator.zsh
+source /usr/local/share/zsh/site-functions/_tmuxinator
 alias tmxin='tmuxinator new'
 alias tmxio='tmuxinator open'
 alias tmxic='tmuxinator copy'
