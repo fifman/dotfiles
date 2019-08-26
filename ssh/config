@@ -90,6 +90,11 @@ Host worker1
     HostName 192.168.3.88
     User root
 
+Host alivps
+    HostName 149.129.69.62
+    User root
+    IdentityFile ~/.ssh/mac.key
+
 # --- Sourcetree Generated ---
 Host fifman-GitHub
 	HostName github.com

@@ -11,7 +11,7 @@ export LANG=en_US.UTF-8
 
 after_hooks=()
 
-plugins=(git vi-mode sudo docker osx docker-compose docker-machine brew mvn gradle  goint pyint javaint weblogic svnint powerline gitint mail private mobile tmux ruby)
+plugins=(git vi-mode sudo docker osx docker-compose docker-machine brew mvn gradle  goint pyint javaint weblogic svnint powerline gitint mail private mobile tmux ruby vim)
 
 post_process () {
     for hook in {$after_hooks[@]}; do
@@ -38,6 +38,8 @@ post_process
 
 # ansible fork problem
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+export PATH="/usr/local/sbin:$PATH"
 
 # unsetopt XTRACE
 # exec 2>&3 3>&-

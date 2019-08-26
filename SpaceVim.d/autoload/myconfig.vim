@@ -24,6 +24,9 @@ endf
 
 func! myconfig#before() abort
 
+    let g:python2_host_prog = '/usr/local/bin/python'
+    let g:python3_host_prog = '/usr/local/bin/python3'
+
     au BufNewFile,BufRead *.gradle set filetype=groovy
 	" au BufRead,BufNewFile *.ans	set filetype=yaml
 	au BufRead,BufNewFile *.stack set filetype=yaml
