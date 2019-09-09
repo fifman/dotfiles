@@ -1,0 +1,8 @@
+{
+    "segments": {
+        "right": [{
+            "function": "powerline_gitstatus.gitstatus",
+            "priority": 60
+        }]
+    }
+}
