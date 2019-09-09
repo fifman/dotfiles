@@ -1,6 +1,6 @@
 function init_powerline {
     powerline-daemon -q
-    . /Users/fifman/Library/Python/3.6/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
+    . `pip3 show powerline-status | grep Location | awk '{print $2}'`/powerline/bindings/zsh/powerline.zsh
 }
 
 after_hooks+=(init_powerline)
