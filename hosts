@@ -1,0 +1,20 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost   fifman-mac.local
+# 0.0.0.0 account.jetbrains.com www.jetbrains.com
+192.168.103.32 isc.szpl.gov
+192.168.80.17 mail.isc.szpl.gov
+192.168.80.84 www.szpl.gov
+192.168.80.83 zwpt.szpl.gov
+
+# The following entry is needed on some systems for Monotype SkyFonts.
+# Please do not modify it.
+127.0.0.1 local.skyfonts.com
+192.168.3.87 gate.szpl.gov.cn
+192.168.3.45 nexus.msplat.io
