@@ -11,7 +11,7 @@ export LANG=en_US.UTF-8
 
 after_hooks=()
 
-plugins=(git vi-mode sudo docker osx docker-compose docker-machine brew mvn gradle  goint pyint javaint weblogic svnint powerline gitint mail mobile tmux ruby vim)
+plugins=(git vi-mode sudo docker osx docker-compose docker-machine brew mvn gradle  goint pyint javaint weblogic svnint powerline gitint mail mobile tmux ruby vim k8s)
 
 post_process () {
     for hook in {$after_hooks[@]}; do
