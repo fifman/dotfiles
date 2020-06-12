@@ -35,7 +35,7 @@ Host szpl
     User admin
     IdentityFile ~/.ssh/szpl.out12.key
 
-Host szplr
+Host test1
     HostName 168.168.100.12
     User root
     IdentityFile ~/.ssh/szpl.out12.key
@@ -50,12 +50,12 @@ Host virtual
     User root
     IdentityFile ~/.ssh/virtual-linux.key
 
-Host prod24
+Host test2
     HostName 168.168.100.24
     User root
     IdentityFile ~/.ssh/mac.key
 
-Host prod25
+Host test3
     HostName 168.168.100.25
     User root
     IdentityFile ~/.ssh/mac.key
@@ -90,8 +90,29 @@ Host worker1
     HostName 192.168.3.88
     User root
 
+Host worker2
+    HostName 192.168.3.89
+    User root
+
+Host out1
+    HostName 192.168.3.76
+    User root
+
+Host out2
+    HostName 192.168.3.77
+    User root
+
+Host out3
+    HostName 192.168.3.78
+    User root
+
 Host alivps
     HostName 149.129.69.62
+    User root
+    IdentityFile ~/.ssh/mac.key
+
+Host testw1
+    HostName 192.168.2.72
     User root
     IdentityFile ~/.ssh/mac.key
 
