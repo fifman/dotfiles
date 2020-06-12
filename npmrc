@@ -1,5 +1,10 @@
 strict-ssl=false
 //nexus.msplat.io/repository/:_authToken=NpmToken.5927320b-1c89-3e93-8723-11553c2dd6b1
-registry=https://registry.npm.taobao.org/
+registry=http://nexus.msplat.io/repository/npm
 _auth=admin
 home=https://npm.taobao.org
+proxy=http://168.168.100.25:3128/
+https-proxy=http://168.168.100.25:3128/
+always-auth=true
+save-exact=true
+distributeurl=http://nexus.msplat.io/repository/jxudp-local-npm
