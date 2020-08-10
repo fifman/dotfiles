@@ -116,6 +116,22 @@ Host testw1
     User root
     IdentityFile ~/.ssh/mac.key
 
+Host spark1
+    HostName 192.168.102.124
+    User root
+
+Host spark2
+    HostName 192.168.102.125
+    User root
+
+Host spark3
+    HostName 192.168.102.126
+    User root
+
+Host gitlab
+    HostName 192.168.86.102
+    User root
+
 # --- Sourcetree Generated ---
 Host fifman-GitHub
 	HostName github.com
